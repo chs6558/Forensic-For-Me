@@ -4,7 +4,7 @@ metaTitle: "hardware"
 metaDescription: " "
 ---
 
-## **1.** **기억장치**
+**1.** **기억장치**
 
 컴퓨터는 여러 개의 하드 웨어가 상호 보완적으로 동작하면서 특정 작업을 수행한다. **Main board**는 computer의 여러 hardware 중 가장 중추적인 역할을 담당하는 것으로 **hard ware들이 서로 연결되어 동작 할 수 있게 해준다.** 다른 말로 Motherboard라고도 부른다.
 
@@ -24,7 +24,7 @@ RAM은 **Random Access Memory**로 읽고 쓰기가 자유로운 메모리이지
 
  
 
-## **2.** **저장장치**
+**2.** **저장장치**
 
 **- Floppy Disk Drive : FDD**
 

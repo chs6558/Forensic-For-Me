@@ -4,7 +4,7 @@ metaTitle: "Definition of Digital Forensic"
 metaDescription: " "
 ---
 
-## **What is Digital Forensic?**
+**What is Digital Forensic?**
 
 해외에서와 다르게 국내에서는 Forensic을 법의학 또는 과학수사 라는 용어로 부른다.
 
@@ -30,7 +30,7 @@ metaDescription: " "
 
  
 
-## **Forensic** **사업**
+**Forensic** **사업**
 
 Forensic을 사용하는 산업은 여러 종류가 있다.
 
@@ -42,7 +42,7 @@ Forensic을 사용하는 산업은 여러 종류가 있다.
 
  
 
-## **Data Recovery가 관연 forensic인가?**
+**Data Recovery가 관연 forensic인가?**
 
 삭제된 data를 무조건 복구한다고 해서 Forensic인 것은 아니다. **Data** **복구의 목적이 사고의 원인을 밝혀내기 위한 것이라면 Forensic**에 속하지만, **실수로 잘못 삭제하거나 손상된 데이터를 복구하는 것은 Forensic에 속한다고 하는 것은 잘못**되었다.
 
