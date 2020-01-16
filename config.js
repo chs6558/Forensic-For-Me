@@ -6,9 +6,9 @@ const config = {
 	},
 	"header": {
 		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
-		"logoLink": "https://learn.hasura.io",
+		"logoLink": "https://forensic-for-me.netlify.com",
 		"title": "Forensic For Me",
-		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
+		"githubUrl": "https://github.com/chs6558/Forensic-For-Me",
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
@@ -24,7 +24,7 @@ const config = {
 	},
 	"sidebar": {
 		"forcedNavOrder": [
-			"/introduction",
+			"/introduction","/Forensic-Focus",
     		"/codeblock"
 		],
     	"collapsedNav": [
