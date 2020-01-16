@@ -16,7 +16,7 @@ metaDescription: " "
 
 Live Forensic은 현장의 증거 수집만을 대상으로 하지만, 초기 현장에서 시스템을 접했을 떄 취해야 하는 대응 방안을 일컬어 First Response, Live Response, Incident Reponse 등의 용어를 사용한다. 이 장에서는 간단하게 Live Forensic만 다룰 것이다. Live Forensic은 크게 활성 데이터 수집과 비활성 데이터 수집으로 나누어진다.
 
-![](C:\Users\user\Desktop\Forensic-For-Me\src\components\images\Live_Forensic.png)
+![](..\..\src\components\images\Live_Forensic.png)
 
 \- 활성 데이터 수집
 
