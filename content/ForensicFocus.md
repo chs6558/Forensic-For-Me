@@ -4,4 +4,4 @@ metaTitle: "Foresnic article"
 metaDescription: " "
 ---
 
-ForensicFocus 
+Space to study the latest article from foresicfocus 
