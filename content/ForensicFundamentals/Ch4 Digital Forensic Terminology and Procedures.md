@@ -18,7 +18,7 @@ metaDescription: " "
 
 디지털 포렌식 절차는 크게 6단계로 나눌 수 있다.
 
-![](..\..\src\components\images\Forensic_procedures.png)
+![](http://forensic-proof.com/wp-content/uploads/2012/04/process-1024x425.png)
 
 1. **사전준비** : 사건이 일어나기 전에 행해지는 활동으로 도구의 준비, 검증, 분석 교육 등의 활동이다.
 
@@ -34,4 +34,4 @@ metaDescription: " "
 
  
 
- 
+  출처 : http://forensic-proof.com/

@@ -96,3 +96,5 @@ EWF는 **Expert Witness Compression Format** 이라는 뜻이고 AFF는 **Advanc
 예산의 문제로 이미징 장비를 선택하는 것은 바람직하지 않다. **환경과 용도에 맞게 장비를 선택**하여야 하며, 분석대상을 확실히 하여 예산 낭비를 줄여야 한다. 
 
  
+
+ 출처 : http://forensic-proof.com/

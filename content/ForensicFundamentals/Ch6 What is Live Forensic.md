@@ -16,7 +16,7 @@ metaDescription: " "
 
 Live Forensic은 현장의 증거 수집만을 대상으로 하지만, 초기 현장에서 시스템을 접했을 떄 취해야 하는 대응 방안을 일컬어 First Response, Live Response, Incident Reponse 등의 용어를 사용한다. 이 장에서는 간단하게 Live Forensic만 다룰 것이다. Live Forensic은 크게 활성 데이터 수집과 비활성 데이터 수집으로 나누어진다.
 
-![](..\..\src\components\images\Live_Forensic.png)
+![](http://forensic-proof.com/wp-content/uploads/2012/04/live_forensic_procedure.png)
 
 \- 활성 데이터 수집
 
@@ -97,3 +97,7 @@ window system을 대상으로 사전 수집이 필요한 주요 비활성 데이
 로그 파일이 매우 크지 않다면 주요 비활성 데이터를 수집하는데 많은 시간이 필요하지 않다. 그리고 수집한 비활성 데이터는 윈도우의 주요 흔적을 포함하고 있기 때문에 타임라인 분석을 비롯한 거의 모든 분석이 가능하다.
 
 사전 분석을 마치면 이미징된 저장매체를 대상으로 악성 분석을 수행하여 악성 코드에 의한 침해 여부를 우선 파악한다. 다음으로 사전 분석에서 도출된 정밀 분석 대상을 추출하여 분석을 수행한다. 이와 같은 방법은 이미징이 완료된 후 분석을 시작했던 기존 방법에 비해, 전체 분석 시간을 단축 시켜줄 뿐만 아니라 사건을 좀 더 객과적으로 바라보게 해준다
+
+
+
+ 출처 : http://forensic-proof.com/

@@ -83,3 +83,7 @@ Flash Memory는 구성방식에 따라 NOR 과 NAND 플래시로 나뉜다. **NO
 SSD는 NAND Flash memory 칩을 기반으로 HDD를 대체하기 위해 개발된 저장매체이다.
 
 SSD는 NAND 플래시 메모리 반도체를 기용하기 때문에 기존 HDD가 사용하였던 Arm과 Platter가 사용되지 않는다. 이러한 이유로 기존 HDD에 비해 매우 빠르고 소비 전력 또한 낮게 나타난다. 또한 Platter의 회전이 필요없어, 소음이나 발열이 발생하지 않는다. 하지만 가격이 비싸다.
+
+
+
+ 출처 : http://forensic-proof.com/
