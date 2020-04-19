@@ -1,5 +1,5 @@
 ---
-title: "2장 디지털 데이터 표현"
+title: "B. 디지털 데이터 표현"
 metaTitle: ""
 metaDescription: ""
 ---

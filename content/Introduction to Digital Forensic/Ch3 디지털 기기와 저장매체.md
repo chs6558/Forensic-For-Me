@@ -1,5 +1,5 @@
 ---
-title: "3장 디지털 기기와 저장 매체"
+title: "C. 디지털 기기와 저장 매체"
 metaTitle: ""
 metaDescription: ""
 ---

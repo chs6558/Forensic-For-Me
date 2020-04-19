@@ -1,5 +1,5 @@
 ---
-title: "7장 디지털 증거 분석 기술"
+title: "G. 디지털 증거 분석 기술"
 metaTitle: ""
 metaDescription: ""
 ---

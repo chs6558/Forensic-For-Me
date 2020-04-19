@@ -1,5 +1,5 @@
 ---
-title: "6장 디지털 증거 수집"
+title: "F. 디지털 증거 수집"
 metaTitle: ""
 metaDescription: ""
 ---
