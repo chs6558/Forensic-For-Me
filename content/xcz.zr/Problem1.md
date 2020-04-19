@@ -10,7 +10,7 @@ end of image
 
 ## Description
 
-![](../../src/components/images/whysoserious.png)
+![](images/whysoserious.png)
 
 Title을 잘 보면 "end of image" 라고 적혀 있다. 이를 바탕으로 이미지에 숨겨진 무언가가 있다는 것을 유추할 수 있다. 즉, steganography 와 관련된 문제라는 것이다. 먼저 이미지를 다운 받고, HxD를 이용해 이미지를 열어보자. 
 
