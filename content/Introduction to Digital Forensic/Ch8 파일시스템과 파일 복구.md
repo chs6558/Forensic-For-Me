@@ -525,7 +525,7 @@ metaDescription: ""
 
    ![](http://forensic-proof.com/wp-content/uploads/1/cfile6.uf.19226C034C7D081306AAD9.png)
 
-   ###### 그림 출처 : http://forensic-proof.com/archives/584
+   그림 출처 : http://forensic-proof.com/archives/584
 
    MFT Entry의 구조는 위의 그림과 같다. 
 
@@ -553,7 +553,7 @@ metaDescription: ""
 
    ![](http://forensic-proof.com/wp-content/uploads/1/cfile23.uf.12712C0B4C7D2A771F9CF1.png)
 
-   ###### 그림 출처 : http://forensic-proof.com/archives/584
+   그림 출처 : http://forensic-proof.com/archives/584
 
    위의 그림은 Fixup이 적용되기 이전과 이후 상태를 나타낸다. 3개의 섹터를 사용하는 데이터이므로 각 섹터의 마지막 2 Byte를 별도로 저장해 Fixup 배열을 만든 후 마지막 2 byte 공간에 별도의 시그니처를 저장해 준다. 이것의 목적은 해당 데이터가 저장되는 섹터의 이상 유무를 점검하기 위해서이다. 
 
@@ -563,7 +563,7 @@ metaDescription: ""
 
    ![](http://forensic-proof.com/wp-content/uploads/1/cfile6.uf.19226C034C7D081306AAD9.png)
 
-   ###### 그림 출처 : http://forensic-proof.com/archives/584
+   그림 출처 : http://forensic-proof.com/archives/584
 
    아까 위에서 봤던 그림이다. Fixup 배열에 이어 여러 개의 속성이 뒤 따라 오는 것을 알 수 있다. 파일의 시간 정보, 이름, 데이터 등은 각각 하나의 속성으로 표현되는데 파일의 종류에 다라 하나 이상의 다양한 속성들이 저장된다. 
 
