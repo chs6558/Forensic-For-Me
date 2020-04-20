@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>GPS Route Editor Version History</title>
+	<style type="text/css">
+		* { font-family: 나눔고딕, 맑은 고딕, Sans-Serif }
+		body { font-size: 10pt; background-color: white; line-height: 120%;}
+		h1 { color: #66CCFF; font-size: 20pt; font-weight: normal; margin-bottom: 0.5em }
+		h2 { color: #3366CC; font-size: 12pt; font-weight: normal; padding: 1em 0 0 1em }
+		li { margin-bottom: 5px; }
+		.strikeout { text-decoration: line-through; }
+		h2.beta { color: #717b62; }		
+		#old-history { display: none; }
+	</style>
+	<script type="text/javascript">
+		function fitInnerFrame(id)
+		{
+			if (parent != null)
+			{
+				var target = parent.document.getElementById(id);
+				if (target)
+				{
+					target.style.height = (document.body.scrollHeight + 30) + "px";
+				}				
+			}
+		}
+
+		function addEventHandler(source, name, func)
+		{
+			if (source.addEventListener) source.addEventListener(name, func, false);
+			else if (source.attachEvent) source.attachEvent("on" + name, func);			
+			else source["on" + name] = func;
+		}
+
+		function init()
+		{
+			fitInnerFrame('HistoryFrame');
+
+			var showAnchor = document.getElementById('show-old');
+			if (showAnchor)
+			{
+				addEventHandler(showAnchor, 'click', function (e)
+				{
+					var pane = document.getElementById('old-history');
+					if (pane) pane.style.display = (pane.style.display != 'block' ? 'block' : 'none');
+
+					fitInnerFrame('HistoryFrame');
+
+					e.preventDefault();
+					return false;
+				});
+			}
+		}
+	</script>
+</head>
+
+<body onload="javascript: init();">
+	<h1>GPS Route Editor Version History</h1>
+
+	<h2>Version 3.9.5 - 2019년 1월 25일</h2>
+	<ol>
+		<li>OSM 경로찾기 업데이트.</li>
+	</ol>
+
+	<h2>Version 3.9.4 - 2018년 9월 2일</h2>
+	<ol>
+		<li>고도 데이터가 없는 외부 파일(GPX, NMEA)을 Import 했을 때, 고도데이터 다운로드가 되지 않는 문제 수정.</li>
+		<li>지도 확대/축소 버튼 추가.</li>
+		<li>Alt. 검색 기능 제거.</li>
+		<li>그 외 사소한 업데이트.</li>
+	</ol>
+
+	<h2>Version 3.9.2 - 2018년 3월 17일</h2>
+	<ol>
+		<li>Bing 지도 업데이트.</li>
+		<li>고도 데이터 다운로드 UI 개선.</li>
+	</ol>
+
+	<h2>Version 3.9.1 - 2018년 2월 22일</h2>
+	<ol>
+		<li>성능 개선.</li>
+		<li>포인트 이동 시, 기존에 입력되어 있는 고도값이 -1로 초기화되도록 변경.</li>
+		<li>고도 데이터 다운로드 시, 새로 그려지거나 이동한 포인트만 다운하도록 업데이트.</li>
+		<li>경로 탐색 및 고도 데이터 다운로드 매커니즘 보완.</li>
+	</ol>
+
+	<h2>Version 3.7.0 - 2017년 11월 8일</h2>
+	<ol>
+		<li>Bing 지도 업데이트.</li>
+	</ol>
+
+	<h2>Version 3.6.0 - 2017년 9월 4일</h2>
+	<ol>
+		<li>Windows 10의 내장 백신 Windows Defender가 프로그램 시작을 느리게 하는 문제에 대응.</li>
+		<li>프로그램 시작 시, 오래된 지도 타일 정리기능 개선 후 재도입.</li>
+	</ol>
+
+	<h2>Version 3.5.1 - 2017년 8월 21일</h2>
+	<ol>
+		<li>Bing 지도 추가.</li>
+		<li>오픈사이클맵 추가.</li>
+		<li>지도 단축키 순서 일부 변경.</li>
+		<li>드로잉 버그 수정.</li>
+		<li>열어본 파일목록 삭제기능 추가.</li>
+	</ol>
+
+	<h2>Version 3.0.1 - 2017년 7월 25일</h2>
+	<ol>
+		<li>프로그램 시작 시, 딜레이를 유발하는 지도 타일 정리기능 제거.</li>
+	</ol>
+
+	<h2>Version 3.0.0 - 2017년 7월 13일</h2>
+	<ol>
+		<li>.NET Framework 4.6.2로 업그레이드.</li>
+		<li>UI 업데이트.</li>
+		<li>이전 열어본 파일을 다시 열 수 있는 기능 추가.</li>
+		<li>지도 축적도(Scale Indicator) 추가.</li>
+		<li>프로그램 데이터를 삭제할 수 있는 클리너 프로그램 추가.</li>
+		<li>그 외 사소한 업데이트.</li>
+	</ol>
+
+	<h2>Version 2.13.2 - 2017년 5월 22일</h2>
+	<ol>
+		<li>고도 데이터 수신 실패시, 오류 메시지를 표시하도록 업데이트.</li>
+		<li>포인트 이동 시, 기존에 입력되어 있는 고도값을 유지하도록 변경.</li>
+	</ol>
+
+	<h2>Version 2.13.0 - 2017년 4월 30일</h2>
+	<ol>
+		<li>Alt. 경로탐색 업데이트.</li>
+		<li>GPX 파일 Import 개선.</li>
+	</ol>
+
+	<a id="show-old" href="#">더 오래된 업데이트 내역 보이기/감추기</a>
+
+	<div id="old-history">
+		<h2>Version 2.12.14 - 2016년 10월 23일</h2>
+		<ol>
+			<li>OSM 도보 경로탐색 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.12.13 - 2016년 9월 6일</h2>
+		<ol>
+			<li>OSM 지도 차단문제 수정.</li>
+		</ol>
+
+		<h2>Version 2.12.11 - 2016년 7월 23일</h2>
+		<ol>
+			<li>Alt. 경로탐색 업데이트.</li>
+			<li>일부 백신에서 Malware(악성 프로그램)로 오진하는 문제에 대응한 새 빌드.</li>
+		</ol>
+
+		<h2>Version 2.12.9 - 2016년 7월 14일</h2>
+		<ol>
+			<li>Alt. 경로탐색 실패 시, 프로그램 오류가 발생하는 문제 수정.</li>
+			<li>편집기능 오류수정.</li>
+		</ol>
+
+		<h2>Version 2.12.7 - 2015년 12월 25일</h2>
+		<ol>
+			<li>Alt. 경로탐색 업데이트.</li>
+			<li>구간선택(Shift + Drag)시 이전에 선택된 구간이 해제되지 않는 문제 수정.</li>
+		</ol>
+
+		<h2>Version 2.12.6 - 2015년 10월 30일</h2>
+		<ol>
+			<li>고도차트를 통해 구간선택 후, 중복된 경로가 잘못 삭제되는 문제 수정.</li>
+			<li>특정상황에서 창 위치가 잘못 저장되는 문제 수정.</li>
+			<li>구글 경로탐색 업데이트.</li>
+			<li>고도차트 동작 방식 보완.</li>
+			<li>화면 축소/확대 키보드 단축키에 Page Up / Page Down 추가 할당.</li>
+			<li>그외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.12.0 - 2015년 8월 21일</h2>
+		<ol>
+			<li>구글 하이브리드 지도 오버줌 관련 문제 보완.</li>
+			<li>고도차트를 통해 구간선택을 할 때, 경로가 겹치는 부분이 정확하게 선택되지 않는 문제 수정.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.11.0 - 2015년 5월 5일</h2>
+		<ol>
+			<li>Alt. 경로탐색 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.10.0 - 2015년 4월 30일</h2>
+		<ol>
+			<li>지도 컴포넌트 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.9.8 - 2015년 4월 20일</h2>
+		<ol>
+			<li>Alt. 경로탐색, 서버 오류가 발생하는 문제 수정.</li>
+		</ol>
+
+		<h2>Version 2.9.7 - 2015년 4월 12일</h2>
+		<ol>
+			<li>'OSM 경로탐색, 자전거 이면도로 위주' 검색 옵션 수정.</li>
+			<li>상승고도 계산방법 개선. 프로그램 설정에 평지 제외 옵션 추가.</li>
+		</ol>
+
+		<h2>Version 2.9.5 - 2014년 7월 25일</h2>
+		<ol>
+			<li>일부 시스템에서 실행이 안되는 문제 수정.</li>
+			<li>그외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.9.3 - 2014년 6월 16일</h2>
+		<ol>
+			<li>고도차트 일부 개선.</li>
+			<li>버그 수정 및 사소한 업데이트.</li>
+		</ol>
+
+		<h2 class="beta">Version 2.9.0 Beta - 2014년 5월 9일</h2>
+		<ol>
+			<li>OSM 경로탐색 업데이트.</li>
+			<li>
+				Alt. 경로탐색 (자동차 위주) 추가.<br />
+				*고속도로, 자동차전용도로를 구분하지 못하고 탐색되므로 주의 요망.
+			</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.8.1 - 2014년 4월 14일</h2>
+		<ol>
+			<li>고도 차트에 경사도 표시 기능 추가.</li>
+			<li>고도 차트 버그 수정.</li>
+			<li>Alt. 경로탐색 제거.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.7.0 - 2013년 9월 20일</h2>
+		<ol>
+			<li>지도 컴포넌트 업데이트.</li>
+			<li>위치검색 오류 수정.</li>
+		</ol>
+
+		<h2>Version 2.6.1 - 2013년 8월 19일</h2>
+		<ol>
+			<li>고도데이터 다운로드시 Cast Error가 발생하는 문제 수정.</li>
+		</ol>
+
+		<h2>Version 2.6.0 - 2013년 7월 8일</h2>
+		<ol>
+			<li>트랙 뒤집기 기능 추가.</li>
+			<li>Waypoints 팝업메뉴 관련 문제 수정.</li>
+			<li>지도 컴포넌트 업데이트.</li>
+			<li>OSM 지도 경로탐색 기능 수정 (라우팅 서비스 변경).</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+		<h2>Version 2.5.2 - 2013년 3월 8일</h2>
+		<ol>
+			<li>지도 컴포넌트 튜닝.</li>
+			<li>
+				'위치 찾기' 기능 개선:<br />
+				* 위치 찾기 기능을 통해 웨이포인트를 검색할 수 있게 했으며, 여러 개의 찾기결과가 표시될 수 있도록 변경.<br />
+				* 웨이포인트 목록에 입력 포커스가 있는 경우, 키보드를 통한 단순 검색 기능 추가.<br />
+			</li>
+			<li>
+				'Zoom to Fit'기능 추가:<br />
+				* 전체경로가 화면에 보이도록 축소/확대하는 기능.
+			</li>
+			<li>지도 화면에서 일부 웨이포인트의 팝업메뉴가 나타나지 않는 문제 수정.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.4.1 - 2013년 1월 31일</h2>
+		<ol>
+			<li>
+				한국 구글지도 개편내용 반영<br />
+				* 개편 전에 사용되던 예전 서버가 불안정하게 동작하여 개편된 새 서버로 접속하도록 변경.
+			</li>
+		</ol>
+
+		<h2>Version 2.4.0 - 2012년 10월 18일</h2>
+		<ol>
+			<li>편집잠금 상태로 화면축소시, 경로 진행방향 표시기능 추가.</li>
+			<li>화면 캡춰시, 경로 진행방향 표시기능 추가.</li>
+			<li>Waypoints 항목 순서 바꾸기 추가(마우스 끌어놓기).</li>
+			<li>지도 컴포넌트 업데이트.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.2.0 - 2012년 7월 4일</h2>
+		<ol>
+			<li>지도 컴포넌트 업데이트.</li>
+			<li>GPX v1.0 규격 파일 Import 기능 추가.</li>
+			<li>편집잠금 상태에서 영역선택 후, 삭제가 되지 않는 문제 수정.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 2.1.2 - 2012년 1월 19일</h2>
+		<ol>
+			<li>드로잉 관련 버그 수정.</li>
+		</ol>
+
+		<h2>Version 2.1.1 - 2012년 1월 13일</h2>
+		<ol>
+			<li>화면 캡춰 기능 추가.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2 class="beta">Version 2.1.0 Beta - 2012년 1월 4일</h2>
+		<ol>
+			<li>
+				성능 개선.<br />
+				* 장거리 경로 편집 성능 대폭 향상.<br />
+				* 지도 드래그 속도 향상.<br />
+				* 파일 읽어들이는 속도 향상.
+			</li>
+			<li>고도 표시기능 추가.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 1.8.8 - 2011년 9월 8일</h2>
+		<ol>
+			<li>성능 개선 및 안정화.</li>
+		</ol>
+		<h2 class="beta">Version 1.8.7 Beta - 2011년 8월 31일</h2>
+		<ol>
+			<li>
+				Native x64 지원:<br />
+				* 64비트 OS에서 64비트 프로그램으로 실행됩니다.
+			</li>
+			<li>
+				위치찾기 기능 추가:<br />
+				* 주소 또는 지명으로 장소를 검색하여 이동 가능.<br />
+				* 검색한 지역을 웨이포인트로 바로 저장 가능.
+			</li>
+			<li>툴바에 Elements 목록창 보이기/숨기기 버튼 추가.</li>
+			<li>다중선택 (Shift + Drag) 오류 수정.</li>
+			<li>
+				웨이포인트를 큐비랩 마이포인트(.myp) 파일로 저장(export)할 수 있는 기능 추가:<br />
+				* Waypoint의 컨텍스트 메뉴(마우스 오른쪽 클릭 -&gt; &#39;MYP 파일로 저장&#39;)에서 개별 저장 가능.<br />
+				* Elements 창의 최상위 항목인 Waypoints의 컨텍스트 메뉴(마우스 오른쪽 클릭 -&gt; &#39;MYP 파일로 모두 저장&#39;)에서 일괄 저장
+				가능.
+			</li>
+			<li>
+				처음 프로그램을 설치하여 실행할 때, 오류가 발생하는 문제 수정.<br />
+				* 이전 버전 사용자의 경우 해당 오류가 발생하지 않음.
+			</li>
+			<li>
+				외부에서 불러온(Import) GPX 파일에 고도(Altitude; Elevation) 정보가 있을 경우, 해당 정보를 보존하도록 변경.<br />
+				* 향후 버전에서 고도 정보를 처리하기 위한 준비 과정입니다.
+			</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 1.8.0 - 2011년 4월 22일</h2>
+		<ol>
+			<li>웨이포인트(Waypoint) 기능 추가.</li>
+			<li>구글경로탐색 개선.</li>
+			<li>로컬캐시 삭제기능 개선.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 1.7.3 - 2011년 2월 17일</h2>
+		<ol>
+			<li>
+				사용지역 설정기능 추가:<br />
+				* 사용지역을 해외로 설정할 경우, 구글 지도서버를 별도로 설정하도록 함.
+			</li>
+			<li>
+				구글지도 경로탐색 추가:<br />
+				* 한국에서는 사용할 수 없습니다. 해외에서만 사용가능.<br />
+				* 각 국가별 구글지도 경로탐색(driving directions) 지원여부는 아래 페이지에서 확인하실 수 있습니다.<br />
+				*
+				<a href="http://gmaps-samples.googlecode.com/svn/trunk/mapcoverage_filtered.html" target="_blank">
+					http://gmaps-samples.googlecode.com/svn/trunk/mapcoverage_filtered.html
+				</a>
+			</li>
+			<li>로컬 캐시(Cache) 삭제 기능 추가.</li>
+			<li>프로그램 로딩속도 개선.</li>
+			<li>
+				키보드 단축키 개선:<br />
+				* 방향키 (지도이동)<br />
+				* 지도변경 (F1 ~ F4)<br />
+				* 지도 확대/축소(+/-)
+			</li>
+		</ol>
+
+		<h2>Version 1.7.0 - 2011년 2월 6일</h2>
+		<ol>
+			<li>
+				멀티 포인트 삭제기능 추가.<br />
+				Shift+마우스 왼쪽 버튼 드래그하여 선택 후, Delete키로 삭제. 선택취소는 ESC키
+			</li>
+			<li>첫 번째 포인트를 드래그한 후, UNDO 실행 시 경로가 잘못 그려지는 문제 수정.</li>
+			<li>자동 경로탐색으로 만들어낸 경로가 겹칠 경우, UNDO 기능이 잘못 실행되는 문제 수정.</li>
+			<li>OSM 지도 경로탐색 기능 개선: 라우팅 서비스 변경.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 1.6.0 - 2011년 1월 26일</h2>
+		<ol>
+			<li>자동경로탐색(길찾기) 기능 개선: 경로탐색 메뉴에 Alt. 버전 추가.</li>
+			<li>파일저장 대화상자 관련 버그 수정: 새 경로 저장 시, 파일선택 대화상자가 반복적으로 나타남.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 1.5.0 - 2011년 1월 21일</h2>
+		<ol>
+			<li>OSM(OpenStreetMap) 지도를 통한 자동경로탐색(길찾기) 기능 추가.</li>
+			<li>UNDO(실행 취소)/REDO(다시 실행) 기능 추가.</li>
+			<li>새 버전 체크 기능 추가.</li>
+			<li>그 외 사소한 업데이트.</li>
+		</ol>
+
+		<h2>Version 1.0.0 - 2010년 12월 26일</h2>
+		<ol>
+			<li>최초 릴리즈.</li>
+		</ol>
+	</div>
+</body>
+</html>
