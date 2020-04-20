@@ -1,7 +1,7 @@
 ---
-title: "xcz.zr"
+title: "Wargame"
 metaTitle: " "
 metaDescription: " "
 ---
 
-Forensic War game site
+Wargame 문제풀이

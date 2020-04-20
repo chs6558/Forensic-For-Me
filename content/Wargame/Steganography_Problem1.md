@@ -1,5 +1,5 @@
 ---
-title: "Problem_1"
+title: "End of Image"
 metaTitle: "steganography"
 metaDescription: " "
 ---
